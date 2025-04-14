@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Shop E-Inventory</title>
+    <link id="theme-style" rel="stylesheet" href="styles-light.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">PC Shop</div>
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#processors">Processors</a>
+                <a href="#graphics">Graphics Cards</a>
+                <button onclick="toggleTheme()" class="theme-toggle">Toggle Theme</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to PC Shop</h1>
+            <p>Your one-stop destination for premium PC components</p>
+        </section>
+
+        <section id="processors" class="product-section">
+            <h2>Processors</h2>
+            <div class="product-grid" id="processors-grid"></div>
+        </section>
+
+        <section id="graphics" class="product-section">
+            <h2>Graphics Cards</h2>
+            <div class="product-grid" id="graphics-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 PC Shop E-Inventory. All rights reserved.</p>
+            <div class="validation">
+                <a href="https://validator.w3.org/check?uri=referer">
+                    <img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.svg" alt="Valid HTML5" height="32" width="32">
+                </a>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" height="32" width="88">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

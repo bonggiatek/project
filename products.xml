@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pcshop>
+    <categories>
+        <category id="processors">
+            <name>Processors</name>
+            <products>
+                <product id="cpu1">
+                    <name>AMD Ryzen 9 5950X</name>
+                    <price>549.99</price>
+                    <image>images/amd-ryzen-9.svg</image>
+                    <description>16-core, 32-thread processor for high-end computing</description>
+                    <specs>
+                        <cores>16</cores>
+                        <threads>32</threads>
+                        <baseSpeed>3.4 GHz</baseSpeed>
+                        <boostSpeed>4.9 GHz</boostSpeed>
+                    </specs>
+                    <stock>15</stock>
+                </product>
+                <product id="cpu2">
+                    <name>Intel Core i9-12900K</name>
+                    <price>589.99</price>
+                    <image>images/intel-core-i9.svg</image>
+                    <description>Latest generation Intel processor for gaming and content creation</description>
+                    <specs>
+                        <cores>16</cores>
+                        <threads>24</threads>
+                        <baseSpeed>3.2 GHz</baseSpeed>
+                        <boostSpeed>5.2 GHz</boostSpeed>
+                    </specs>
+                    <stock>10</stock>
+                </product>
+                <product id="cpu3">
+                    <name>AMD Ryzen 7 5800X</name>
+                    <price>399.99</price>
+                    <image>images/amd-ryzen-7.svg</image>
+                    <description>8-core processor perfect for gaming and multitasking</description>
+                    <specs>
+                        <cores>8</cores>
+                        <threads>16</threads>
+                        <baseSpeed>3.8 GHz</baseSpeed>
+                        <boostSpeed>4.7 GHz</boostSpeed>
+                    </specs>
+                    <stock>20</stock>
+                </product>
+                <product id="cpu4">
+                    <name>Intel Core i7-12700K</name>
+                    <price>419.99</price>
+                    <image>images/intel-core-i7.svg</image>
+                    <description>12-core processor for high-performance computing</description>
+                    <specs>
+                        <cores>12</cores>
+                        <threads>20</threads>
+                        <baseSpeed>3.6 GHz</baseSpeed>
+                        <boostSpeed>5.0 GHz</boostSpeed>
+                    </specs>
+                    <stock>18</stock>
+                </product>
+                <product id="cpu5">
+                    <name>AMD Ryzen 5 5600X</name>
+                    <price>299.99</price>
+                    <image>images/amd-ryzen-5.svg</image>
+                    <description>6-core processor ideal for mainstream gaming</description>
+                    <specs>
+                        <cores>6</cores>
+                        <threads>12</threads>
+                        <baseSpeed>3.7 GHz</baseSpeed>
+                        <boostSpeed>4.6 GHz</boostSpeed>
+                    </specs>
+                    <stock>25</stock>
+                </product>
+                <product id="cpu6">
+                    <name>Intel Core i5-12600K</name>
+                    <price>289.99</price>
+                    <image>images/intel-core-i5.svg</image>
+                    <description>10-core processor for mid-range gaming builds</description>
+                    <specs>
+                        <cores>10</cores>
+                        <threads>16</threads>
+                        <baseSpeed>3.7 GHz</baseSpeed>
+                        <boostSpeed>4.9 GHz</boostSpeed>
+                    </specs>
+                    <stock>22</stock>
+                </product>
+            </products>
+        </category>
+        <category id="graphics">
+            <name>Graphics Cards</name>
+            <products>
+                <product id="gpu1">
+                    <name>NVIDIA RTX 4080</name>
+                    <price>1199.99</price>
+                    <image>images/nvidia-rtx-4080.svg</image>
+                    <description>High-end graphics card for gaming and rendering</description>
+                    <specs>
+                        <memory>16GB GDDR6X</memory>
+                        <coreClock>2205 MHz</coreClock>
+                        <ports>HDMI 2.1, 3x DisplayPort 1.4a</ports>
+                        <powerRequirement>320W</powerRequirement>
+                    </specs>
+                    <stock>8</stock>
+                </product>
+                <product id="gpu2">
+                    <name>AMD Radeon RX 7900 XT</name>
+                    <price>899.99</price>
+                    <image>images/amd-radeon-7900xt.svg</image>
+                    <description>High-performance graphics card with ray tracing support</description>
+                    <specs>
+                        <memory>20GB GDDR6</memory>
+                        <coreClock>2400 MHz</coreClock>
+                        <ports>HDMI 2.1, 2x DisplayPort 2.1</ports>
+                        <powerRequirement>300W</powerRequirement>
+                    </specs>
+                    <stock>12</stock>
+                </product>
+                <product id="gpu3">
+                    <name>NVIDIA RTX 4070</name>
+                    <price>599.99</price>
+                    <image>images/nvidia-rtx-4070.svg</image>
+                    <description>Mid-range graphics card with excellent ray tracing capabilities</description>
+                    <specs>
+                        <memory>12GB GDDR6X</memory>
+                        <coreClock>2475 MHz</coreClock>
+                        <ports>HDMI 2.1, 3x DisplayPort 1.4a</ports>
+                        <powerRequirement>200W</powerRequirement>
+                    </specs>
+                    <stock>15</stock>
+                </product>
+                <product id="gpu4">
+                    <name>AMD Radeon RX 6700 XT</name>
+                    <price>479.99</price>
+                    <image>images/amd-radeon-6700xt.svg</image>
+                    <description>Great 1440p gaming performance at a competitive price</description>
+                    <specs>
+                        <memory>12GB GDDR6</memory>
+                        <coreClock>2581 MHz</coreClock>
+                        <ports>HDMI 2.1, 2x DisplayPort 1.4</ports>
+                        <powerRequirement>230W</powerRequirement>
+                    </specs>
+                    <stock>20</stock>
+                </product>
+                <product id="gpu5">
+                    <name>AMD Radeon RX 6800 XT</name>
+                    <price>649.99</price>
+                    <image>images/amd-radeon-6800xt.svg</image>
+                    <description>Powerful graphics card for 4K gaming</description>
+                    <specs>
+                        <memory>16GB GDDR6</memory>
+                        <coreClock>2015 MHz</coreClock>
+                        <ports>HDMI 2.1, 2x DisplayPort 1.4</ports>
+                        <powerRequirement>250W</powerRequirement>
+                    </specs>
+                    <stock>12</stock>
+                </product>
+                <product id="gpu6">
+                    <name>NVIDIA RTX 4070 Ti</name>
+                    <price>799.99</price>
+                    <image>images/nvidia-rtx-4070ti.svg</image>
+                    <description>Excellent performance for 1440p and 4K gaming</description>
+                    <specs>
+                        <memory>12GB GDDR6X</memory>
+                        <coreClock>2610 MHz</coreClock>
+                        <ports>HDMI 2.1, 3x DisplayPort 1.4a</ports>
+                        <powerRequirement>285W</powerRequirement>
+                    </specs>
+                    <stock>15</stock>
+                </product>
+                <product id="gpu5">
+                    <name>NVIDIA RTX 4060 Ti</name>
+                    <price>399.99</price>
+                    <image>images/nvidia-rtx-4060ti.svg</image>
+                    <description>Perfect for 1080p and 1440p gaming</description>
+                    <specs>
+                        <memory>8GB GDDR6</memory>
+                        <coreClock>2535 MHz</coreClock>
+                        <ports>HDMI 2.1, 3x DisplayPort 1.4a</ports>
+                    </specs>
+                    <stock>20</stock>
+                </product>
+                <product id="gpu6">
+                    <name>AMD Radeon RX 6600 XT</name>
+                    <price>329.99</price>
+                    <image>images/amd-radeon-6600xt.svg</image>
+                    <description>Efficient 1080p gaming performance</description>
+                    <specs>
+                        <memory>8GB GDDR6</memory>
+                        <coreClock>2359 MHz</coreClock>
+                        <ports>HDMI 2.1, 2x DisplayPort 1.4</ports>
+                    </specs>
+                    <stock>25</stock>
+                </product>
+            </products>
+        </category>
+    </categories>
+</pcshop>
