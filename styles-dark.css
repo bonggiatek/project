@@ -1,11 +1,11 @@
 /* New Dark Theme Styles */
 :root {
-    --primary-color: #ff6347; /* Changed primary color to Tomato */
-    --secondary-color: #32cd32; /* Changed secondary color to LimeGreen */
-    --background-color: #2f2f2f; /* Slightly lighter background */
-    --text-color: #e0e0e0; /* Slightly off-white text */
-    --card-bg: #333333; /* Darker card background */
-    --shadow: 0 4px 6px rgba(255,255,255,0.2); /* Deeper shadows */
+    --primary-color: #ff6347; /* Tomato color */
+    --secondary-color: #32cd32; /* Lime Green */
+    --background-color: #2f2f2f; /* Dark background */
+    --text-color: #e0e0e0; /* Light text */
+    --card-bg: #333333; /* Dark cards */
+    --shadow: 0 4px 6px rgba(255,255,255,0.2); /* Deep shadows */
     --font-family: 'Roboto', sans-serif;
 }
 
@@ -35,7 +35,7 @@ header {
 .main-nav {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +50,7 @@ header {
 
 .nav-links {
     display: flex;
-    gap: 2rem; /* Increased gap between nav items */
+    gap: 2rem; /* Larger gap between navigation items */
     align-items: center;
 }
 
@@ -77,13 +77,13 @@ header {
 }
 
 .theme-toggle:hover {
-    background-color: #28a745; /* Slightly different hover color */
+    background-color: #28a745; /* Darker hover color */
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 5rem 2rem; /* Increased padding */
+    padding: 6rem 2rem; /* Larger padding for more prominence */
     background: linear-gradient(to right, #121212, var(--secondary-color));
     color: var(--text-color);
 }
@@ -101,58 +101,60 @@ header {
 /* Product Sections */
 .product-section {
     max-width: 1200px;
-    margin: 3rem auto;
+    margin: 4rem auto; /* Larger margin for product sections */
     padding: 0 1rem;
 }
 
 .product-section h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     color: var(--primary-color);
+    font-size: 2rem; /* Bigger heading */
 }
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjust grid layout */
     gap: 2rem; /* Increased gap between product cards */
 }
 
-/* Updated Card Styles */
+/* Product Card Styles */
 .product-card {
     background-color: var(--card-bg);
     border-radius: 12px; /* Rounded corners */
-    padding: 1.8rem;
+    padding: 2rem;
     box-shadow: var(--shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
 }
 
 .product-card:hover {
     transform: translateY(-8px); /* Larger hover effect */
-    box-shadow: 0 10px 15px rgba(255,255,255,0.2); /* Enhanced shadow */
+    box-shadow: 0 12px 18px rgba(255,255,255,0.2); /* Stronger shadow effect */
 }
 
 .product-image {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     display: block;
 }
 
 .product-card h3 {
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
-    font-size: 1.4rem;
+    margin-bottom: 1rem; /* Increased margin for better spacing */
+    font-size: 1.5rem; /* Larger product title */
 }
 
 .product-card .price {
     color: var(--secondary-color);
-    font-size: 1.5rem;
+    font-size: 1.75rem; /* Larger price */
     font-weight: bold;
-    margin: 0.5rem 0;
+    margin: 1rem 0;
 }
 
 .product-card .specs {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #ccc;
     margin: 0.5rem 0;
 }
@@ -160,13 +162,14 @@ header {
 .product-card .stock {
     color: #4ade80;
     font-weight: bold;
+    font-size: 1.2rem; /* Larger font for stock */
 }
 
 /* Footer */
 footer {
     background-color: var(--card-bg);
     padding: 3rem 1rem;
-    margin-top: 4rem; /* Larger footer margin */
+    margin-top: 5rem; /* Larger footer margin */
     box-shadow: var(--shadow);
 }
 
@@ -200,7 +203,7 @@ footer {
     }
 
     .product-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Single column on small screens */
     }
 
     .footer-content {
