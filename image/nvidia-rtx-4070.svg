@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="300" height="150" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+    <!-- GPU Card Base -->
+    <rect x="10" y="10" width="280" height="130" rx="5" fill="#1a1a1a" />
+    
+    <!-- Cooling Fans -->
+    <circle cx="100" cy="75" r="35" fill="#333333" stroke="#76b900" stroke-width="2" />
+    <circle cx="200" cy="75" r="35" fill="#333333" stroke="#76b900" stroke-width="2" />
+    
+    <!-- Fan Blades Suggestion -->
+    <circle cx="100" cy="75" r="30" fill="none" stroke="#444444" stroke-width="1" />
+    <circle cx="200" cy="75" r="30" fill="none" stroke="#444444" stroke-width="1" />
+    
+    <!-- NVIDIA Logo -->
+    <text x="30" y="40" font-family="Arial Black" font-size="16" fill="#76b900">NVIDIA</text>
+    
+    <!-- Model Name -->
+    <text x="30" y="60" font-family="Arial" font-size="12" fill="white">GeForce RTX™ 4070</text>
+    
+    <!-- Power Connectors -->
+    <rect x="250" y="20" width="20" height="10" fill="#333333" />
+    <rect x="250" y="35" width="20" height="10" fill="#333333" />
+</svg>

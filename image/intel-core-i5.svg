@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- CPU Base -->
+    <rect x="20" y="20" width="160" height="160" rx="10" fill="#0071c5" />
+    
+    <!-- CPU Heat Spreader -->
+    <rect x="30" y="30" width="140" height="140" rx="5" fill="#silver" />
+    
+    <!-- Intel Logo -->
+    <text x="100" y="80" font-family="Arial Black" font-size="24" fill="#0071c5" text-anchor="middle">INTEL</text>
+    
+    <!-- Model Name -->
+    <text x="100" y="110" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">CORE i5</text>
+    <text x="100" y="130" font-family="Arial" font-size="14" fill="#333" text-anchor="middle">12600K</text>
+    
+    <!-- Pin Grid Array Suggestion -->
+    <rect x="40" y="140" width="120" height="20" fill="#ddd" />
+    <rect x="45" y="145" width="110" height="10" fill="#ccc" />
+</svg>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Processor Base -->
+  <rect x="50" y="50" width="200" height="200" fill="#2b2b2b" rx="10"/>
+  
+  <!-- Processor Details -->
+  <rect x="70" y="70" width="160" height="160" fill="#1a1a1a" rx="5"/>
+  
+  <!-- AMD Logo -->
+  <text x="150" y="130" font-family="Arial" font-size="24" fill="#ff0000" text-anchor="middle">AMD</text>
+  <text x="150" y="160" font-family="Arial" font-size="16" fill="#ffffff" text-anchor="middle">Ryzen 9</text>
+  <text x="150" y="180" font-family="Arial" font-size="14" fill="#ffffff" text-anchor="middle">5950X</text>
+  
+  <!-- Processor Pins Grid -->
+  <g transform="translate(85, 200)" fill="#666">
+    <circle r="2" cx="0" cy="0"/>
+    <circle r="2" cx="20" cy="0"/>
+    <circle r="2" cx="40" cy="0"/>
+    <circle r="2" cx="0" cy="20"/>
+    <circle r="2" cx="20" cy="20"/>
+    <circle r="2" cx="40" cy="20"/>
+  </g>
+</svg>

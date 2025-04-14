@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="300" height="150" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+    <!-- GPU Card Base -->
+    <rect x="10" y="10" width="280" height="130" rx="5" fill="#2b2b2b" />
+    
+    <!-- Cooling Fans -->
+    <circle cx="80" cy="75" r="30" fill="#444444" stroke="#ED1C24" stroke-width="2" />
+    <circle cx="150" cy="75" r="30" fill="#444444" stroke="#ED1C24" stroke-width="2" />
+    <circle cx="220" cy="75" r="30" fill="#444444" stroke="#ED1C24" stroke-width="2" />
+    
+    <!-- Fan Blades Suggestion -->
+    <circle cx="80" cy="75" r="25" fill="none" stroke="#555555" stroke-width="1" />
+    <circle cx="150" cy="75" r="25" fill="none" stroke="#555555" stroke-width="1" />
+    <circle cx="220" cy="75" r="25" fill="none" stroke="#555555" stroke-width="1" />
+    
+    <!-- AMD Logo -->
+    <text x="30" y="40" font-family="Arial Black" font-size="16" fill="#ED1C24">AMD</text>
+    
+    <!-- Model Name -->
+    <text x="30" y="60" font-family="Arial" font-size="12" fill="white">Radeon™ RX 6800 XT</text>
+    
+    <!-- Power Connectors -->
+    <rect x="250" y="20" width="20" height="10" fill="#333333" />
+    <rect x="250" y="35" width="20" height="10" fill="#333333" />
+</svg>
