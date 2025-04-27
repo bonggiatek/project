@@ -12,11 +12,7 @@
         <nav class="main-nav">
             <div class="logo">PC Shop</div>
             <div class="nav-links">
-                <a href="#" class="active">Home</a>
-                <a href="#processors">Processors</a>
-                <a href="#graphics">Graphics Cards</a>
-                <a href="#motherboards">Motherboards</a>
-                <a href="#memory">Memory</a>                
+            
                 <button onclick="toggleTheme()" class="theme-toggle">Toggle Theme</button>
             </div>
         </nav>
@@ -28,6 +24,7 @@
             <p>Your one-stop destination for premium PC components</p>
         </section>
 
+        <!-- Sorting and Filtering Section -->
         <section class="product-section">
             <label for="sort-by">Sort by:</label>
             <select id="sort-by" onchange="sortProducts()">
@@ -38,8 +35,18 @@
                 <option value="stock-asc">Stock (Low → High)</option>
                 <option value="stock-desc">Stock (High → Low)</option>
             </select>
+
+            <label for="category-filter" style="margin-left: 1rem;">Category:</label>
+            <select id="category-filter" onchange="filterCategory()">
+                <option value="all">All Products</option>
+                <option value="processors">Processors</option>
+                <option value="graphics">Graphics Cards</option>
+                <option value="motherboards">Motherboards</option>
+                <option value="memory">Memory</option>
+            </select>
         </section>
 
+        <!-- Product Sections -->
         <section id="processors" class="product-section">
             <h2>Processors</h2>
             <div class="product-grid" id="processors-grid"></div>
@@ -49,15 +56,16 @@
             <h2>Graphics Cards</h2>
             <div class="product-grid" id="graphics-grid"></div>
         </section>
+
         <section id="motherboards" class="product-section">
-             <h2>Motherboards</h2>
-             <div class="product-grid" id="motherboards-grid"></div>
-         </section>
- 
-         <section id="memory" class="product-section">
-             <h2>Memory (RAM)</h2>
-             <div class="product-grid" id="memory-grid"></div>
-         </section>
+            <h2>Motherboards</h2>
+            <div class="product-grid" id="motherboards-grid"></div>
+        </section>
+
+        <section id="memory" class="product-section">
+            <h2>Memory (RAM)</h2>
+            <div class="product-grid" id="memory-grid"></div>
+        </section>
     </main>
 
     <footer>
