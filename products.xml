@@ -223,6 +223,61 @@
                     </specs>
                     <stock>30</stock>
                 </product>
+                <product id="ram2">
+                    <name>G.Skill Trident Z RGB 32GB</name>
+                    <price>149.99</price>
+                    <image>image/gskill-tridentz.svg</image>
+                    <description>RGB DDR4 memory with high performance</description>
+                    <specs>
+                        <speed>3600MHz</speed>
+                        <type>DDR4</type>
+                    </specs>
+                    <stock>25</stock>
+                </product>
+                <product id="ram3">
+                    <name>Kingston Fury Beast 64GB</name>
+                    <price>229.99</price>
+                    <image>image/kingston-fury.svg</image>
+                    <description>High-capacity DDR4 memory kit</description>
+                    <specs>
+                        <speed>3200MHz</speed>
+                        <type>DDR4</type>
+                    </specs>
+                    <stock>15</stock>
+                </product>
+                <product id="ram4">
+                    <name>Crucial Ballistix 16GB</name>
+                    <price>79.99</price>
+                    <image>image/crucial-ballistix.svg</image>
+                    <description>Affordable DDR4 memory with good performance</description>
+                    <specs>
+                        <speed>3000MHz</speed>
+                        <type>DDR4</type>
+                    </specs>
+                    <stock>35</stock>
+                </product>
+                <product id="ram5">
+                    <name>TeamGroup T-Force Delta RGB 32GB</name>
+                    <price>129.99</price>
+                    <image>image/teamgroup-delta.svg</image>
+                    <description>RGB memory with excellent performance</description>
+                    <specs>
+                        <speed>3600MHz</speed>
+                        <type>DDR4</type>
+                    </specs>
+                    <stock>20</stock>
+                </product>
+                <product id="ram6">
+                    <name>Patriot Viper Steel 16GB</name>
+                    <price>69.99</price>
+                    <image>image/patriot-viper.svg</image>
+                    <description>Budget-friendly DDR4 memory</description>
+                    <specs>
+                        <speed>3200MHz</speed>
+                        <type>DDR4</type>
+                    </specs>
+                    <stock>40</stock>
+                </product>
             </products>
         </category>        
     </categories>
