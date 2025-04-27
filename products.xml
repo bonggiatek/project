@@ -213,15 +213,15 @@
             <name>Memory (RAM)</name>
             <products>
                 <product id="ram1">
-                    <name>Corsair Vengeance LPX 16GB</name>
-                    <price>89.99</price>
-                    <image>image/corsair-vengeance.svg</image>
+                    <name>Kingston Fury Beast Black DDR5 EXPO 5200Mhz /5600Mhz /6000MHz /6400MHz Desktop AMD Ryzen Gaming Memory PC RAM</name>
+                    <price>292.99</price>
+                    <image>image/ram1.jpg</image>
                     <description>High-performance DDR4 memory</description>
                     <specs>
                         <speed>3200MHz</speed>
                         <type>DDR4</type>
                     </specs>
-                    <stock>30</stock>
+                    <stock>15</stock>
                 </product>
             </products>
         </category>        
