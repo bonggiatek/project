@@ -20,7 +20,7 @@
                 <product id="cpu2">
                     <name>Intel Core i9-12900K</name>
                     <price>589.99</price>
-                    <image>image/intel-core-i9.svg</image>
+                    <image>image/intel-core-i9.jpg</image>
                     <description>Latest generation Intel processor for gaming and content creation</description>
                     <specs>
                         <cores>16</cores>
@@ -33,7 +33,7 @@
                 <product id="cpu3">
                     <name>AMD Ryzen 7 5800X</name>
                     <price>399.99</price>
-                    <image>image/amd-ryzen-7.svg</image>
+                    <image>image/amd-ryzen-7.jpg</image>
                     <description>8-core processor perfect for gaming and multitasking</description>
                     <specs>
                         <cores>8</cores>
@@ -46,7 +46,7 @@
                 <product id="cpu4">
                     <name>Intel Core i7-12700K</name>
                     <price>419.99</price>
-                    <image>image/intel-core-i7.svg</image>
+                    <image>image/intel-core-i7.jpg</image>
                     <description>12-core processor for high-performance computing</description>
                     <specs>
                         <cores>12</cores>
@@ -59,7 +59,7 @@
                 <product id="cpu5">
                     <name>AMD Ryzen 5 5600X</name>
                     <price>299.99</price>
-                    <image>image/amd-ryzen-5.svg</image>
+                    <image>image/amd-ryzen-5.jpg</image>
                     <description>6-core processor ideal for mainstream gaming</description>
                     <specs>
                         <cores>6</cores>
@@ -72,7 +72,7 @@
                 <product id="cpu6">
                     <name>Intel Core i5-12600K</name>
                     <price>289.99</price>
-                    <image>image/intel-core-i5.svg</image>
+                    <image>image/intel-core-i5.jpg</image>
                     <description>10-core processor for mid-range gaming builds</description>
                     <specs>
                         <cores>10</cores>
