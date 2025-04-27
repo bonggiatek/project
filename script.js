@@ -1,3 +1,6 @@
+// Store XML data globally
+let xmlDataGlobal = null;
+
 // Function to load and parse XML data
 async function loadXMLData() {
     try {
@@ -8,14 +11,14 @@ async function loadXMLData() {
         const xmlText = await response.text();
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
-        
-        // Check for parsing errors
+
         const parserError = xmlDoc.querySelector('parsererror');
         if (parserError) {
             throw new Error('XML parsing error');
         }
-        
+
         console.log('XML loaded successfully');
+        xmlDataGlobal = xmlDoc; // Store XML globally
         displayProducts(xmlDoc);
     } catch (error) {
         console.error('Error loading XML data:', error);
@@ -27,28 +30,28 @@ function displayProducts(xmlDoc) {
     try {
         const categories = xmlDoc.getElementsByTagName('category');
         console.log('Found categories:', categories.length);
-        
+
         Array.from(categories).forEach(category => {
             const categoryId = category.getAttribute('id');
             console.log('Processing category:', categoryId);
-            
+
             const productsGrid = document.getElementById(`${categoryId}-grid`);
             if (!productsGrid) {
                 console.error(`Grid element not found for category: ${categoryId}`);
                 return;
             }
-            
+
             // Clear existing content
             productsGrid.innerHTML = '';
-            
+
             const products = category.getElementsByTagName('product');
             console.log(`Found ${products.length} products in category ${categoryId}`);
-            
+
             if (products.length === 0) {
                 productsGrid.innerHTML = '<p>No products available in this category.</p>';
                 return;
             }
-            
+
             Array.from(products).forEach(product => {
                 const card = createProductCard(product);
                 productsGrid.appendChild(card);
@@ -94,6 +97,50 @@ function createProductCard(product) {
         console.error('Error creating product card:', error);
         return document.createElement('div'); // Return empty div as fallback
     }
+}
+
+// Function to sort products based on selected option
+function sortProducts() {
+    if (!xmlDataGlobal) return;
+
+    const sortBy = document.getElementById('sort-by').value;
+
+    const categories = xmlDataGlobal.getElementsByTagName('category');
+    Array.from(categories).forEach(category => {
+        const products = Array.from(category.getElementsByTagName('product'));
+
+        products.sort((a, b) => {
+            let aValue, bValue;
+
+            if (sortBy.includes('name')) {
+                aValue = a.getElementsByTagName('name')[0]?.textContent || '';
+                bValue = b.getElementsByTagName('name')[0]?.textContent || '';
+                return sortBy.endsWith('asc') ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
+            }
+
+            if (sortBy.includes('price')) {
+                aValue = parseFloat(a.getElementsByTagName('price')[0]?.textContent || 0);
+                bValue = parseFloat(b.getElementsByTagName('price')[0]?.textContent || 0);
+                return sortBy.endsWith('asc') ? aValue - bValue : bValue - aValue;
+            }
+
+            if (sortBy.includes('stock')) {
+                aValue = parseInt(a.getElementsByTagName('stock')[0]?.textContent || 0);
+                bValue = parseInt(b.getElementsByTagName('stock')[0]?.textContent || 0);
+                return sortBy.endsWith('asc') ? aValue - bValue : bValue - aValue;
+            }
+
+            return 0;
+        });
+
+        const productsGrid = document.getElementById(`${category.getAttribute('id')}-grid`);
+        productsGrid.innerHTML = '';
+
+        products.forEach(product => {
+            const card = createProductCard(product);
+            productsGrid.appendChild(card);
+        });
+    });
 }
 
 // Theme switching functionality
