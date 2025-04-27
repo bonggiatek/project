@@ -15,6 +15,8 @@
                 <a href="#" class="active">Home</a>
                 <a href="#processors">Processors</a>
                 <a href="#graphics">Graphics Cards</a>
+                <a href="#motherboards">Motherboards</a>
+                <a href="#memory">Memory</a>                
                 <button onclick="toggleTheme()" class="theme-toggle">Toggle Theme</button>
             </div>
         </nav>
@@ -26,7 +28,7 @@
             <p>Your one-stop destination for premium PC components</p>
         </section>
 
-        <section class="sort-section">
+        <section class="product-section">
             <label for="sort-by">Sort by:</label>
             <select id="sort-by" onchange="sortProducts()">
                 <option value="name-asc">Name (A → Z)</option>
@@ -47,6 +49,15 @@
             <h2>Graphics Cards</h2>
             <div class="product-grid" id="graphics-grid"></div>
         </section>
+        <section id="motherboards" class="product-section">
+             <h2>Motherboards</h2>
+             <div class="product-grid" id="motherboards-grid"></div>
+         </section>
+ 
+         <section id="memory" class="product-section">
+             <h2>Memory (RAM)</h2>
+             <div class="product-grid" id="memory-grid"></div>
+         </section>
     </main>
 
     <footer>
