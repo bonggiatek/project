@@ -191,5 +191,39 @@
                 </product>
             </products>
         </category>
+        <category id="motherboards">
+            <name>Motherboards</name>
+            <products>
+                <product id="mb1">
+                    <name>ASUS ROG Strix X570-E</name>
+                    <price>299.99</price>
+                    <image>image/asus-rog-x570.svg</image>
+                    <description>Gaming motherboard with Wi-Fi 6 support</description>
+                    <specs>
+                        <chipset>X570</chipset>
+                        <formFactor>ATX</formFactor>
+                        <memorySupport>128GB DDR4</memorySupport>
+                    </specs>
+                    <stock>12</stock>
+                </product>
+            </products>
+        </category>
+        
+        <category id="memory">
+            <name>Memory (RAM)</name>
+            <products>
+                <product id="ram1">
+                    <name>Corsair Vengeance LPX 16GB</name>
+                    <price>89.99</price>
+                    <image>image/corsair-vengeance.svg</image>
+                    <description>High-performance DDR4 memory</description>
+                    <specs>
+                        <speed>3200MHz</speed>
+                        <type>DDR4</type>
+                    </specs>
+                    <stock>30</stock>
+                </product>
+            </products>
+        </category>        
     </categories>
 </pcshop>
