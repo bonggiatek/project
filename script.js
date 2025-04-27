@@ -27,32 +27,41 @@ function displayProducts(xmlDoc) {
     try {
         const categories = xmlDoc.getElementsByTagName('category');
         console.log('Found categories:', categories.length);
-        
+
         Array.from(categories).forEach(category => {
             const categoryId = category.getAttribute('id');
-            console.log('Processing category:', categoryId);
-            
             const productsGrid = document.getElementById(`${categoryId}-grid`);
-            if (!productsGrid) {
-                console.error(`Grid element not found for category: ${categoryId}`);
-                return;
-            }
-            
-            // Clear existing content
+            if (!productsGrid) return;
+
             productsGrid.innerHTML = '';
-            
-            const products = category.getElementsByTagName('product');
-            console.log(`Found ${products.length} products in category ${categoryId}`);
-            
-            if (products.length === 0) {
-                productsGrid.innerHTML = '<p>No products available in this category.</p>';
-                return;
-            }
-            
-            Array.from(products).forEach(product => {
-                const card = createProductCard(product);
-                productsGrid.appendChild(card);
+
+            const products = Array.from(category.getElementsByTagName('product'));
+
+            // Optional grouping - for example by brand (if <brand> tag exists)
+            const groups = {};
+
+            products.forEach(product => {
+                const brand = product.getElementsByTagName('brand')[0]?.textContent || 'Others';
+                if (!groups[brand]) {
+                    groups[brand] = [];
+                }
+                groups[brand].push(product);
             });
+
+            for (const [groupName, groupProducts] of Object.entries(groups)) {
+                const groupHeader = document.createElement('h3');
+                groupHeader.textContent = groupName;
+                productsGrid.appendChild(groupHeader);
+
+                const groupContainer = document.createElement('div');
+                groupContainer.className = 'product-group';
+                productsGrid.appendChild(groupContainer);
+
+                groupProducts.forEach(product => {
+                    const card = createProductCard(product);
+                    groupContainer.appendChild(card);
+                });
+            }
         });
     } catch (error) {
         console.error('Error displaying products:', error);
