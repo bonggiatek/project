@@ -143,6 +143,7 @@ function sortProducts() {
     });
 }
 function filterCategory() {
+    alert();
     const selectedCategory = document.getElementById('category-filter').value;
     const allSections = document.querySelectorAll('.product-section');
 
