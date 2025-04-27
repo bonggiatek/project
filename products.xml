@@ -7,7 +7,7 @@
                 <product id="cpu1">
                     <name>AMD Ryzen 9 5950X</name>
                     <price>549.99</price>
-                    <image>image/amd-ryzen-9.svg</image>
+                    <image>image/amd-ryzen-9.jpg</image>
                     <description>16-core, 32-thread processor for high-end computing</description>
                     <specs>
                         <cores>16</cores>
