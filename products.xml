@@ -206,6 +206,57 @@
                     </specs>
                     <stock>12</stock>
                 </product>
+                <product id="mb2">
+                    <name>MSI MPG B550 Gaming Edge WiFi</name>
+                    <price>199.99</price>
+                    <image>image/motherboard2.webp</image>
+                    <description>Reliable B550 motherboard for AMD Ryzen CPUs</description>
+                    <specs>
+                        <chipset>B550</chipset>
+                        <formFactor>ATX</formFactor>
+                        <memorySupport>128GB DDR4</memorySupport>
+                    </specs>
+                    <stock>18</stock>
+                </product>
+                
+                <product id="mb3">
+                    <name>Gigabyte Z690 AORUS Master</name>
+                    <price>479.99</price>
+                    <image>image/motherboard3.webp</image>
+                    <description>High-end motherboard supporting Intel 12th Gen CPUs</description>
+                    <specs>
+                        <chipset>Z690</chipset>
+                        <formFactor>ATX</formFactor>
+                        <memorySupport>128GB DDR5</memorySupport>
+                    </specs>
+                    <stock>8</stock>
+                </product>
+                
+                <product id="mb4">
+                    <name>ASRock B450M Steel Legend</name>
+                    <price>109.99</price>
+                    <image>image/motherboard4.webp</image>
+                    <description>Durable micro-ATX motherboard for budget builds</description>
+                    <specs>
+                        <chipset>B450</chipset>
+                        <formFactor>Micro-ATX</formFactor>
+                        <memorySupport>64GB DDR4</memorySupport>
+                    </specs>
+                    <stock>20</stock>
+                </product>
+                
+                <product id="mb5">
+                    <name>ASUS TUF Gaming Z590-Plus WiFi</name>
+                    <price>259.99</price>
+                    <image>image/motherboard5.webp</image>
+                    <description>Military-grade durability for Intel 10th and 11th Gen CPUs</description>
+                    <specs>
+                        <chipset>Z590</chipset>
+                        <formFactor>ATX</formFactor>
+                        <memorySupport>128GB DDR4</memorySupport>
+                    </specs>
+                    <stock>14</stock>
+                </product>
             </products>
         </category>
         
