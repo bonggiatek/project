@@ -1,120 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-    .contact-container {
-        max-width: 1000px;
-        margin: 4rem auto;
-        padding: 2rem;
-        background: var(--card-bg);
-        border-radius: 8px;
-        box-shadow: var(--shadow);
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
-
-    .contact-info {
-        font-size: 1.1rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        justify-content: center;
-    }
-
-    .contact-form {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .form-group {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .form-group label {
-        margin-bottom: 0.5rem;
-        font-weight: bold;
-        color: var(--primary-color);
-    }
-
-    .form-group input,
-    .form-group textarea {
-        padding: 0.8rem;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        font-size: 1rem;
-    }
-
-    .contact-form button {
-        align-self: flex-start;
-    }
-
-    @media (max-width: 768px) {
-        .contact-container {
-            grid-template-columns: 1fr;
-        }
-    }
-</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PC Shop E-Inventory</title>
     <link id="theme-style" rel="stylesheet" href="styles-light.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <nav class="main-nav">
             <div class="logo">PC Shop</div>
             <div class="nav-links">
-                <a href="index.html">Home page</a>
-                <a href="contact.html">Contact Us</a>
+                <a href="imdex.html" class="active">Home</a>
+                <a href="contact.html" class="active">Contact Us</a>
                 <button onclick="toggleTheme()" class="theme-toggle">Toggle Theme</button>
             </div>
         </nav>
     </header>
 
     <main>
- <main>
-    <section class="hero">
-        <h1>Contact Us</h1>
-        <p>Have questions? Get in touch with PC Shop!</p>
-    </section>
+        <section class="hero">
+            <h1>Contact Us</h1>
+            <p>Have questions? Get in touch with PC Shop!</p>
+        </section>
 
-    <section class="contact-container">
-        <div class="contact-info">
+        <section id="processors" class="product-section">
+            <h2>Processors</h2>
+            <div class="product-grid" id="processors-grid">
             <p><strong>Phone:</strong> +60 234 567 890</p>
             <p><strong>Email:</strong> support@pcstore.com</p>
             <p><strong>Address:</strong> 123 Tech Street, Kuching, 93350</p>
-        </div>
-
-        <form class="contact-form">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your name" required>
             </div>
+        </section>
 
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="6" placeholder="Your message" required></textarea>
-            </div>
-
-            <button type="submit" class="theme-toggle">Send Message</button>
-        </form>
-    </section>
-</main>
-
-
-
+    </main>
 
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 PC Shop E-Inventory. All rights reserved.</p>
+            <div class="validation">
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" height="32" width="88">
+                </a>
+            </div>
         </div>
     </footer>
 </body>
