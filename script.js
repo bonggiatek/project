@@ -65,7 +65,6 @@ function createProductCard(product) {
 
         card.innerHTML = `
             <img src="${image}" alt="${name}" class="product-image" onerror="this.src='images/placeholder.svg'">
-            <h3>${name}</h3>
             <p>${description}</p>
             <div class="price">RM${price}</div>
             ${specsHtml}
