@@ -1,15 +1,20 @@
-// Load and parse XML
+// Function to load and parse XML data
 async function loadXMLData() {
     try {
         const response = await fetch('products.xml');
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
         const xmlText = await response.text();
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(xmlText, 'text/xml');
-
+        
+        // Check for parsing errors
         const parserError = xmlDoc.querySelector('parsererror');
-        if (parserError) throw new Error('XML parsing error');
-
+        if (parserError) {
+            throw new Error('XML parsing error');
+        }
+        
         console.log('XML loaded successfully');
         displayProducts(xmlDoc);
     } catch (error) {
@@ -17,22 +22,34 @@ async function loadXMLData() {
     }
 }
 
-// Display products
+// Function to display products from XML
 function displayProducts(xmlDoc) {
     try {
         const categories = xmlDoc.getElementsByTagName('category');
         console.log('Found categories:', categories.length);
-
+        
         Array.from(categories).forEach(category => {
             const categoryId = category.getAttribute('id');
+            console.log('Processing category:', categoryId);
+            
             const productsGrid = document.getElementById(`${categoryId}-grid`);
-            if (!productsGrid) return;
-
+            if (!productsGrid) {
+                console.error(`Grid element not found for category: ${categoryId}`);
+                return;
+            }
+            
+            // Clear existing content
             productsGrid.innerHTML = '';
-
-            const products = Array.from(category.getElementsByTagName('product'));
-
-            products.forEach(product => {
+            
+            const products = category.getElementsByTagName('product');
+            console.log(`Found ${products.length} products in category ${categoryId}`);
+            
+            if (products.length === 0) {
+                productsGrid.innerHTML = '<p>No products available in this category.</p>';
+                return;
+            }
+            
+            Array.from(products).forEach(product => {
                 const card = createProductCard(product);
                 productsGrid.appendChild(card);
             });
@@ -42,7 +59,7 @@ function displayProducts(xmlDoc) {
     }
 }
 
-// Create product card
+// Function to create a product card
 function createProductCard(product) {
     try {
         const card = document.createElement('div');
@@ -65,44 +82,28 @@ function createProductCard(product) {
 
         card.innerHTML = `
             <img src="${image}" alt="${name}" class="product-image" onerror="this.src='images/placeholder.svg'">
+            <h3>${name}</h3>
             <p>${description}</p>
             <div class="price">RM${price}</div>
             ${specsHtml}
-            <p class="stock">In Stock: <span class="stock-count">${stock}</span></p>
-            <button class="order-button">Order Now</button>
+            <p class="stock">In Stock: ${stock}</p>
         `;
-
-        const orderButton = card.querySelector('.order-button');
-        orderButton.addEventListener('click', () => handleOrder(card));
 
         return card;
     } catch (error) {
         console.error('Error creating product card:', error);
-        return document.createElement('div');
+        return document.createElement('div'); // Return empty div as fallback
     }
 }
 
-// Handle order
-function handleOrder(card) {
-    const stockSpan = card.querySelector('.stock-count');
-    let currentStock = parseInt(stockSpan.textContent);
-
-    if (currentStock > 0) {
-        currentStock -= 1;
-        stockSpan.textContent = currentStock;
-        alert('Order placed successfully!');
-    } else {
-        alert('Sorry, out of stock!');
-    }
-}
-
-// Toggle Theme
+// Theme switching functionality
 let currentTheme = 'light';
+
 function toggleTheme() {
     currentTheme = currentTheme === 'light' ? 'dark' : 'light';
     const themeLink = document.getElementById('theme-style');
     themeLink.href = `styles-${currentTheme}.css`;
 }
 
-// Initialize
+// Load XML data when the page loads
 document.addEventListener('DOMContentLoaded', loadXMLData);
