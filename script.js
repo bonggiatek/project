@@ -4,6 +4,7 @@ let xmlDataGlobal = null;
 // Function to load and parse XML data
 async function loadXMLData() {
     try {
+         loadThemeFromURL() 
         const response = await fetch('products.xml');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
@@ -163,12 +164,46 @@ function filterCategory() {
     });
 }
 // Theme switching functionality
-let currentTheme = 'light';
+function loadThemeFromURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const theme = urlParams.get('theme');
+
+    // If no theme or theme=light, use light theme
+    if (!theme || theme === 'light') {
+        currentTheme = 'light';
+    } else {
+        currentTheme = 'dark';
+    }
+
+    const themeLink = document.getElementById('theme-style');
+    themeLink.href = `styles-${currentTheme}.css`;
+
+    // Update navigation links accordingly
+    const indexLink = document.getElementById('indexurl');
+    const contactLink = document.getElementById('contacturl');
+
+    if (indexLink) {
+        indexLink.href = `index.html?theme=${currentTheme}`;
+    }
+    if (contactLink) {
+        contactLink.href = `contact.html?theme=${currentTheme}`;
+    }
+}
 
 function toggleTheme() {
     currentTheme = currentTheme === 'light' ? 'dark' : 'light';
     const themeLink = document.getElementById('theme-style');
     themeLink.href = `styles-${currentTheme}.css`;
+    // Update URLs with theme parameter
+    const indexLink = document.getElementById('indexurl');
+    const contactLink = document.getElementById('contacturl');
+
+    if (indexLink) {
+        indexLink.href = `index.html?theme=${currentTheme}`;
+    }
+    if (contactLink) {
+        contactLink.href = `contact.html?theme=${currentTheme}`;
+    }
 }
 
 // Load XML data when the page loads
