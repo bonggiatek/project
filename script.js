@@ -142,7 +142,26 @@ function sortProducts() {
         });
     });
 }
+function filterCategory() {
+    const selectedCategory = document.getElementById('category-filter').value;
+    const allSections = document.querySelectorAll('.product-section');
 
+    allSections.forEach(section => {
+        const sectionId = section.id;
+        // Ignore the top sort section (no id)
+        if (!sectionId) return;
+
+        if (selectedCategory === 'all') {
+            section.style.display = 'block';
+        } else {
+            if (sectionId === selectedCategory) {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+            }
+        }
+    });
+}
 // Theme switching functionality
 let currentTheme = 'light';
 
