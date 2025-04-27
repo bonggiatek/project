@@ -215,7 +215,7 @@
                 <product id="ram1">
                     <name>Corsair Vengeance LPX 16GB</name>
                     <price>89.99</price>
-                    <image>image/corsair-vengeance.svg</image>
+                    <image>image/ram1.jpg</image>
                     <description>High-performance DDR4 memory</description>
                     <specs>
                         <speed>3200MHz</speed>
@@ -226,7 +226,7 @@
                 <product id="ram2">
                     <name>G.Skill Trident Z RGB 32GB</name>
                     <price>129.99</price>
-                    <image>image/gskill-trident.svg</image>
+                    <image>image/ram2.jpg</image>
                     <description>RGB DDR4 memory with high performance</description>
                     <specs>
                         <speed>3600MHz</speed>
@@ -237,7 +237,7 @@
                 <product id="ram3">
                     <name>Kingston Fury Beast 64GB</name>
                     <price>229.99</price>
-                    <image>image/kingston-fury.svg</image>
+                    <image>image/ram3.jpg</image>
                     <description>High-capacity DDR4 memory kit</description>
                     <specs>
                         <speed>3200MHz</speed>
@@ -248,7 +248,7 @@
                 <product id="ram4">
                     <name>Crucial Ballistix 16GB</name>
                     <price>79.99</price>
-                    <image>image/crucial-ballistix.svg</image>
+                    <image>image/ram4.jpg</image>
                     <description>Affordable DDR4 memory with good performance</description>
                     <specs>
                         <speed>3000MHz</speed>
@@ -259,7 +259,7 @@
                 <product id="ram5">
                     <name>TeamGroup T-Force Delta RGB 32GB</name>
                     <price>119.99</price>
-                    <image>image/teamgroup-delta.svg</image>
+                    <image>image/ram5.jpg</image>
                     <description>RGB DDR4 memory with vibrant lighting</description>
                     <specs>
                         <speed>3200MHz</speed>
@@ -270,7 +270,7 @@
                 <product id="ram6">
                     <name>Patriot Viper Steel 16GB</name>
                     <price>69.99</price>
-                    <image>image/patriot-viper.svg</image>
+                    <image>image/ram6.jpg</image>
                     <description>Budget-friendly DDR4 memory</description>
                     <specs>
                         <speed>3000MHz</speed>
