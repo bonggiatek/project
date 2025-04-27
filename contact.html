@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>PC Shop E-Inventory</title>
     <link id="theme-style" rel="stylesheet" href="styles-light.css">
     <script src="script.js" defer></script>
 </head>
-
 <body>
     <header>
         <nav class="main-nav">
@@ -20,35 +18,62 @@
             </div>
         </nav>
     </header>
-    <section class="contact-section">
-        <h2>Contact Us</h2>
 
-        <div class="contact-info">
-            <p><strong>Phone:</strong> +60 234 567 890</p>
-            <p><strong>Email:</strong> support@pcstore.com</p>
-            <p><strong>Address:</strong> 123 Tech Street, Kuching, 93350</p>
+    <main>
+        <section class="hero">
+            <h1>Welcome to PC Shop</h1>
+            <p>Your one-stop destination for premium PC components</p>
+        </section>
+
+        <!-- Sorting and Filtering Section -->
+        <section class="product-section">
+            <label for="sort-by">Sort by:</label>
+            <select id="sort-by" onchange="sortProducts()">
+                <option value="name-asc">Name (A → Z)</option>
+                <option value="name-desc">Name (Z → A)</option>
+                <option value="price-asc">Price (Low → High)</option>
+                <option value="price-desc">Price (High → Low)</option>
+                <option value="stock-asc">Stock (Low → High)</option>
+                <option value="stock-desc">Stock (High → Low)</option>
+            </select>
+
+            <label for="category-filter" style="margin-left: 1rem;">Category:</label>
+            <select id="category-filter" onchange="filterCategory()">
+                <option value="all">All Products</option>
+                <option value="processors">Processors</option>
+                <option value="graphics">Graphics Cards</option>
+                <option value="motherboards">Motherboards</option>
+                <option value="memory">Memory</option>
+            </select>
+        </section>
+
+        <!-- Product Sections -->
+        <section id="processors" class="product-section">
+            <h2>Processors</h2>
+            <div class="product-grid" id="processors-grid"></div>
+        </section>
+
+        <section id="graphics" class="product-section">
+            <h2>Graphics Cards</h2>
+            <div class="product-grid" id="graphics-grid"></div>
+        </section>
+
+        <section id="motherboards" class="product-section">
+            <h2>Motherboards</h2>
+            <div class="product-grid" id="motherboards-grid"></div>
+        </section>
+
+        <section id="memory" class="product-section">
+            <h2>Memory (RAM)</h2>
+            <div class="product-grid" id="memory-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 PC Shop E-Inventory. All rights reserved.</p>
+
         </div>
-
-        <form class="contact-form">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" placeholder="Your name" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Your email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" rows="5" placeholder="Your message" required></textarea>
-            </div>
-
-            <button type="submit">Send Message</button>
-        </form>
-
-    </section>
+    </footer>
 </body>
-
 </html>
