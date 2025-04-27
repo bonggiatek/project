@@ -207,75 +207,6 @@
                     <stock>12</stock>
                 </product>
             </products>
-            <products>
-                <product id="mb2">
-                    <name>MSI PRO B760M-E</name>
-                    <price>439.00</price>
-                    <image>image/motherboard1.webp</image>
-                    <description> business-oriented Micro-ATX motherboard fulfills business needs</description>
-                    <specs>
-                        <chipset>INTEL B760</chipset>
-                        <formFactor>Micro ATX (mATX)</formFactor>
-                        <memorySupport>4800(OC)</memorySupport>
-                    </specs>
-                    <stock>10</stock>
-                </product>
-            </products>
-                <product id="mb3">
-                    <name>GIGABYTE B840M EAGLE WIFI6 Micro ATX (mATX) AMD Gaming Motherboard</name>
-                    <price>639.00</price>
-                    <image>image/motherboard2.webp</image>
-                    <description>Gaming Motherboard supports AMD Ryzen™ series Desktop Processors with WIFI 6</description>
-                    <specs>
-                        <chipset>AMD B840</chipset>
-                        <formFactor>Micro ATX (mATX)</formFactor>
-                        <memorySupport>DDR5 7600 - 5600 (OC) MT/s</memorySupport>
-                    </specs>
-                    <stock>20</stock>
-                </product>
-            </products>
-             <products>
-                <product id="mb4">
-                    <name>GIGABYTE B850M AORUS ELITE WIFI6E ICE (mATX) Micro ATX AMD Gaming Motherboard</name>
-                    <price>1229.00</price>
-                    <image>image/motherboard3.webp</image>
-                    <description> Gaming Motherboard supports AMD Ryzen™ series Desktop Processors with WIFI 6E</description>
-                    <specs>
-                        <chipset>AMD B850</chipset>
-                        <formFactor>Micro ATX (mATX)</formFactor>
-                        <memorySupport>DDR5 8200 - 5600 (OC) MT/s</memorySupport>
-                    </specs>
-                    <stock>12</stock>
-                </product>
-            </products>
-             <products>
-                <product id="mb5">
-                    <name>GIGABYTE B850M GAMING X WIFI6E Micro ATX (mATX) AMD Gaming Motherboard </name>
-                    <price>1079.00</price>
-                    <image>image/motherboard4.webp</image>
-                    <description>Gaming Motherboard supports AMD Ryzen™ series Desktop Processors with WIFI6E</description>
-                    <specs>
-                        <chipset>AMD B850</chipset>
-                        <formFactor>Micro ATX (mATX)</formFactor>
-                        <memorySupport>DDR5 8200 - 5600 (OC) MT/s</memorySupport>
-                    </specs>
-                    <stock>10</stock>
-                </product>
-            </products>
-            <products>
-                <product id="mb6">
-                    <name>Asrock H610M-HDV/M.2 R2.0 Micro ATX (mATX) Intel Motherbaord </name>
-                    <price>299.00</price>
-                    <image>image/motherboard5.webp</image>
-                    <description>Intel Motherboard support 12th to 14th Gen and next gen Intel® Core™ Processors (LGA1700) </description>
-                    <specs>
-                        <chipset>Intel H610</chipset>
-                        <formFactor>Micro ATX (mATX)</formFactor>
-                        <memorySupport>Dual Channel DDR4 Memory (2x DDR4 DIMM Slots) - 3200Mhz (OC)</memorySupport>
-                    </specs>
-                    <stock>5</stock>
-                </product>
-            </products>
         </category>
         
         <category id="memory">
@@ -291,6 +222,61 @@
                         <type>DDR4</type>
                     </specs>
                     <stock>30</stock>
+                </product>
+                <product id="ram2">
+                    <name>G.Skill Trident Z RGB 32GB</name>
+                    <price>129.99</price>
+                    <image>image/gskill-trident.svg</image>
+                    <description>RGB DDR4 memory with high performance</description>
+                    <specs>
+                        <speed>3600MHz</speed>
+                        <type>DDR4</type>
+                    </specs>
+                    <stock>25</stock>
+                </product>
+                <product id="ram3">
+                    <name>Kingston Fury Beast 64GB</name>
+                    <price>229.99</price>
+                    <image>image/kingston-fury.svg</image>
+                    <description>High-capacity DDR4 memory kit</description>
+                    <specs>
+                        <speed>3200MHz</speed>
+                        <type>DDR4</type>
+                    </specs>
+                    <stock>15</stock>
+                </product>
+                <product id="ram4">
+                    <name>Crucial Ballistix 16GB</name>
+                    <price>79.99</price>
+                    <image>image/crucial-ballistix.svg</image>
+                    <description>Affordable DDR4 memory with good performance</description>
+                    <specs>
+                        <speed>3000MHz</speed>
+                        <type>DDR4</type>
+                    </specs>
+                    <stock>35</stock>
+                </product>
+                <product id="ram5">
+                    <name>TeamGroup T-Force Delta RGB 32GB</name>
+                    <price>119.99</price>
+                    <image>image/teamgroup-delta.svg</image>
+                    <description>RGB DDR4 memory with vibrant lighting</description>
+                    <specs>
+                        <speed>3200MHz</speed>
+                        <type>DDR4</type>
+                    </specs>
+                    <stock>20</stock>
+                </product>
+                <product id="ram6">
+                    <name>Patriot Viper Steel 16GB</name>
+                    <price>69.99</price>
+                    <image>image/patriot-viper.svg</image>
+                    <description>Budget-friendly DDR4 memory</description>
+                    <specs>
+                        <speed>3000MHz</speed>
+                        <type>DDR4</type>
+                    </specs>
+                    <stock>40</stock>
                 </product>
             </products>
         </category>        
